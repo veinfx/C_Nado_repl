@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(void)
-{
+{ // condition 조건문
   //4-2 if else
 
 	// // 버스를 탄다고 가정 학생/일반인으로 구분 (일반인 : 20세)
@@ -36,7 +36,7 @@ int main(void)
     printf("학생이 아닌가 봐요.\n");
   }*/
 
-// break / continue
+//4-3  break / continue
 // 1번부터 30번가지 있는 반에서 1번에서 5번까지 조별 발표를 합니다.
  
  /*for (int i = 1; i <= 30; i++)
@@ -51,7 +51,7 @@ int main(void)
 
 // 1번부터 30번까지 있는 반에서 7번 학생은 아파서 결석
 // 7번을 제외하고 6번부터 10번까지 조별 발표를 하세요.
-
+/*
 for(int i = 1; i <= 30; i++)
 {
     if( i >=6 && i <= 10)
@@ -66,7 +66,21 @@ for(int i = 1; i <= 30; i++)
 
         }
     }
-}
+}*/
+
+// 4-4 And && // || Or 연산
+    int a = 10;
+    int b = 11;
+    int c = 13;
+    int d = 13;
+    if (a == b || c == d)
+        {
+            printf("a와 b ,혹은  c와 d의 값이  같습니다.\n");
+        }
+    else{
+        printf("값이 서로 달라요\n");
+    }
+
 
   return 0;
 }
