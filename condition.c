@@ -86,7 +86,7 @@ for(int i = 1; i <= 30; i++)
 //4-5 Switch Case
 
 // 가위 0 바위 1 보 2
-    srand(time(NULL));
+/*    srand(time(NULL));
     int i = rand() % 3; // 0 ~ 2 반환
     if (i == 0)
     {
@@ -103,6 +103,19 @@ for(int i = 1; i <= 30; i++)
     else
     {
         printf("몰라요\n");
+    }*/
+
+// 다른방법 Switch case마다  break; 해야한다;
+    srand(time(NULL));
+    // int i = rand() % 3; // 0 ~ 2 반환
+    int i = 1;
+    switch (i)
+
+    {
+        case 0: printf("가위\n"); break;
+        case 1: printf("바위\n"); break;
+        case 2: printf("보\n"); break;
+        default: printf("몰라요\n"); break;
     }
 
   return 0;
