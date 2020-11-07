@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <time.h>
 
 int main(void)
 { // condition 조건문
@@ -69,6 +70,7 @@ for(int i = 1; i <= 30; i++)
 }*/
 
 // 4-4 And && // || Or 연산
+/*  
     int a = 10;
     int b = 11;
     int c = 13;
@@ -79,8 +81,29 @@ for(int i = 1; i <= 30; i++)
         }
     else{
         printf("값이 서로 달라요\n");
-    }
+    }*/
 
+//4-5 Switch Case
+
+// 가위 0 바위 1 보 2
+    srand(time(NULL));
+    int i = rand() % 3; // 0 ~ 2 반환
+    if (i == 0)
+    {
+        printf("가위\n");
+    }
+    else if (i == 1)
+        {
+            printf("바위\n");
+        }
+    else if (i == 2)
+    {
+        printf("보\n");
+    }
+    else
+    {
+        printf("몰라요\n");
+    }
 
   return 0;
 }
