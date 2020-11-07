@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <time.h>
 
-int main(void)
+int main_condition(void)
 { // condition 조건문
   //4-2 if else
 
