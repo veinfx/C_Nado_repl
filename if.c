@@ -3,6 +3,6 @@
 #include <stdio.h>
 
 int main(void) {
-  printf("vsc TEST \n");
+  printf("vsc TEST_2 \n");
   return 0;
 }
