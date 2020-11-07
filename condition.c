@@ -106,16 +106,34 @@ for(int i = 1; i <= 30; i++)
     }*/
 
 // 다른방법 Switch case마다  break; 해야한다;
-    srand(time(NULL));
-    // int i = rand() % 3; // 0 ~ 2 반환
-    int i = 1;
-    switch (i)
+    // srand(time(NULL));
+    // // int i = rand() % 3; // 0 ~ 2 반환
+    // int i = 1;
+    // switch (i)
 
+    // {
+    //     case 0: printf("가위\n"); break;
+    //     case 1: printf("바위\n"); break;
+    //     case 2: printf("보\n"); break;
+    //     default: printf("몰라요\n"); break;
+    // }
+
+    int age = 17;
+    switch (age)
     {
-        case 0: printf("가위\n"); break;
-        case 1: printf("바위\n"); break;
-        case 2: printf("보\n"); break;
-        default: printf("몰라요\n"); break;
+    case 8:
+    case 9:
+    case 10:
+    case 11:
+    case 12:
+    case 13:printf("초딩 입니다.\n");break;
+    case 14:
+    case 15:
+    case 16:printf("중딩 입니다.\n");break;
+    case 17:
+    case 18:
+    case 19:printf("고딩 입니다.\n");break;
+    default : printf("학생이 아닌가 봐요.\n");break;
     }
 
   return 0;
