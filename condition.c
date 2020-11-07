@@ -57,7 +57,7 @@ for(int i = 1; i <= 30; i++)
 {
     if( i >=6 && i <= 10)
     {
-        if(i ==7)
+        if(i ==7)  // i == 7은 i랑 7이랑 똑같은지 아닌지 확인하는 것
         {
             printf("%d번 학생은 결석 입니다.\n",i);
         continue; //조건만족하면 동작하고 다음으로 넘어간다
@@ -118,22 +118,58 @@ for(int i = 1; i <= 30; i++)
     //     default: printf("몰라요\n"); break;
     // }
 
-    int age = 17;
-    switch (age)
+    // int age = 17;
+    // switch (age)
+    // {
+    // case 8:
+    // case 9:
+    // case 10:
+    // case 11:
+    // case 12:
+    // case 13:printf("초딩 입니다.\n");break;
+    // case 14:
+    // case 15:
+    // case 16:printf("중딩 입니다.\n");break;
+    // case 17:
+    // case 18:
+    // case 19:printf("고딩 입니다.\n");break;
+    // default : printf("학생이 아닌가 봐요.\n");break;
+    // }
+
+    // 4-6 프로젝트 Up and Down
+    srand(time(NULL));
+    int num = rand() % 100 + 1; // 1-100 사이의 숫자
+    printf("숫자 : %d\n", num);
+    int answer = 0; //정답  //선언과 동시에 초기화
+    int chance = 5; //기회
+    while (1) // 1 : 참 , 0 :거짓
     {
-    case 8:
-    case 9:
-    case 10:
-    case 11:
-    case 12:
-    case 13:printf("초딩 입니다.\n");break;
-    case 14:
-    case 15:
-    case 16:printf("중딩 입니다.\n");break;
-    case 17:
-    case 18:
-    case 19:printf("고딩 입니다.\n");break;
-    default : printf("학생이 아닌가 봐요.\n");break;
+        printf("남은 기회 %d 번 \n", chance--);
+        printf("숫자를 맞춰 보세요. (1~100) : ");
+        scanf("%d", &answer);
+
+        if(answer > num)
+        {
+            printf("Down \n\n");
+        }
+        else if(answer < num)
+        {
+            printf("Up \n\n");
+        }
+        else if(answer == num)
+        {
+            printf("정답입니다. \n\n");
+            break;
+        }
+        else
+        {
+            printf("알 수 없는 오류가 발생 하였습니다.\n\n");
+        }
+        if (chance == 0)
+        {
+            printf("모든 기회를 다 사용 하였습니다. 실패\n\n");
+            break;    
+        }
     }
 
   return 0;
