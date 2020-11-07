@@ -10,3 +10,6 @@ int main(void)
 		printf("학생 입니다");
 	return 0;
 }
+
+// 한글 git pull 시 한글 깨짐 
+// git config --global gui.encoding utf-8
