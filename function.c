@@ -5,8 +5,10 @@ void p(int num);
 
 void function_without_return();
 int function_with_return();
-void function_with_params();
-    
+
+void function_without_params();
+void function_with_params(int num1,int num2,int num3);
+        
 
 int main()
 {
@@ -45,8 +47,11 @@ int main()
     // int ret = function_with_return();
     // p(ret);
 
-    //5-6 전달값이 없는 함수
-    function_with_params();
+    //5-6 파라미터(전달값)가 없는 함수
+    //function_with_params();
+
+    //5-7 파라미터 (전달값)가 있는 함수
+    function_with_params(36, 34, 36);
 
     return 0;
 }
@@ -76,10 +81,13 @@ int main()
         return 10;
     }
 
-    void function_with_params()
+    void function_without_params()
     {
         printf("전달값이 없는 함수입니다.\n");
     }
-
+    void function_with_params(int num1,int num2,int num3)
+{
+        printf("전달값이 있는 함수이며, \n %d, %d, %d 입니다.\n",num1, num2, num3);
+}
     
 
