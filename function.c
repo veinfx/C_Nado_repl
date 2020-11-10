@@ -5,7 +5,9 @@ void p(int num);
 
 void function_without_return();
 int function_with_return();
+void function_with_params();
     
+
 int main()
 {
     // // 5-2 function
@@ -40,8 +42,11 @@ int main()
     //function_without_return();
 
     //5-5 반환값이 있는 함수
-    int ret = function_with_return();
-    p(ret);
+    // int ret = function_with_return();
+    // p(ret);
+
+    //5-6 전달값이 없는 함수
+    function_with_params();
 
     return 0;
 }
@@ -69,6 +74,11 @@ int main()
     {
         printf("반환값이 있는 함수입니다.\n");
         return 10;
+    }
+
+    void function_with_params()
+    {
+        printf("전달값이 없는 함수입니다.\n");
     }
 
     
