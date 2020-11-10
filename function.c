@@ -8,7 +8,8 @@ int function_with_return();
 
 void function_without_params();
 void function_with_params(int num1,int num2,int num3);
-        
+
+int apple(int total, int ate);//전체 total 개에서 ate 개를 먹고 남은 수를 반환
 
 int main()
 {
@@ -51,8 +52,18 @@ int main()
     //function_with_params();
 
     //5-7 파라미터 (전달값)가 있는 함수
-    function_with_params(36, 34, 36);
+    // function_with_params(36, 34, 36);
 
+    //5-8 파라미터(전달값)도 받고, 반환값이 있는 함수
+    // int ret = apple (5, 2); // 사과 5개중 2개를 먹었다.
+    // {
+    //     printf("사과 5개중에 2개를 먹으면? %d 개가 남아요.\n");
+    // }
+
+    //5-8 심화
+    {
+        printf("사과 %d개중에 %d개를 먹으면? %d개가 남아요.\n ",10, 5, apple(10,5));
+    }
     return 0;
 }
 
@@ -90,4 +101,8 @@ int main()
         printf("전달값이 있는 함수이며, \n %d, %d, %d 입니다.\n",num1, num2, num3);
 }
     
-
+int apple(int total, int ate)        
+{
+    printf("전달값과 반환값이 있는 함수입니다.\n");
+    return total - ate;
+}
