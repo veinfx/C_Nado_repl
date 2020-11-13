@@ -17,7 +17,7 @@ int mul(int num1, int num2);
 int div(int num1, int num2);
 
 
-int main()
+int main_function()
 {
     // // 5-2 function
     // // 계산기
