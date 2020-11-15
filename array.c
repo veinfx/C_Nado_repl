@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-int main(void)
+int main_array(void)
 {
         //6-2 배열 기초
         // int subway_1 = 30; //지하철 1호차에 30명이 타고 있다.
