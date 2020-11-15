@@ -80,7 +80,7 @@ int main(void)
     
         // printf("%s\n",c_array);
 
-        char c_array[10] = {'c','o','d','i','n','g'};
+        // char c_array[10] = {'c','o','d','i','n','g'};
         //printf("%s\n",c_array);
         // for(int i = 0; i < sizeof(c_array); i++)
         // {
@@ -88,18 +88,47 @@ int main(void)
         // }
 
 
-        for(int i = 0; i < sizeof(c_array); i++)
-        {
-            printf("%d\n",c_array[i]); //ASCII 코드 값 출력(NULL 문자 0으로 출력)
-        }
+        // for(int i = 0; i < sizeof(c_array); i++)
+        // {
+        //     printf("%d\n",c_array[i]); //ASCII 코드 값 출력(NULL 문자 0으로 출력)
+        // }
 
         //문자열 입력받기 : 경찰서 조서 쓰기 예제
-        char name[256];
-	    printf("이름이 뭐에요?");
-	    scanf("%s", name, sizeof(name));
+        // char name[256];
+	    // printf("이름이 뭐에요?");
+	    // scanf("%s", name, sizeof(name));
         
-        printf("%s\n",name);
+        // printf("%s\n",name);
         
+        // 6-6 [참고] 아스키 코드 ASCII 코드 ? ANSI 표준 코드 체계
+        // 7bit, 총 128 개 코드 ( 0~127)
+        // a : 97
+        // A : 65
+        // 0 : 48
+
+        printf("%c\n",'a');
+        printf("%d\n",'a');
+        
+        printf("%c\n",'b');
+        printf("%d\n",'b');
+
+        printf("%c\n",'A');
+        printf("%d\n",'A');
+
+        printf("%c\n",'\0');
+        printf("%d\n",'\0');
+
+        printf("%c\n",'0');
+        printf("%d\n",'0');
+
+        printf("%c\n",'1');
+        printf("%d\n",'1');
+
+        //[참고_2] : 0~127 사이의 아스키코드 정수값에 해당하는 문자 확인
+        for(int i = 0 ; i < 128 ; i++)
+        {
+            printf("아스키코드 정수 %d : %c\n",i,i);
+        }
         return 0;
         
 
