@@ -54,7 +54,7 @@ int main(void)
         // char c = 'A';
         // printf("%c\n",c);
 
-        // 문자열 긑에는 '끝'을 의미하는 NULL 문자 '\0' 이 포함되어야 함
+        // 문자열 긑에는 '끝'을 의미하는 NULL 문자 '\0' 이 포함되어야 함 * (repl은 잘나온다;;;)
         //char str[6] = "coding";// [c][o][d][i][n][g][\0]
         // char str[7] = "coding";
         // printf("%s\n",str);
@@ -68,12 +68,38 @@ int main(void)
         //     printf("%c\n",str[i]);
         // }
 
-        char kor[] = "나도코딩";
-        printf("%s\n",kor);
-        printf("%d\n",sizeof(kor));
+        // char kor[] = "나도코딩";
+        // printf("%s\n",kor);
+        // printf("%d\n",sizeof(kor));
         //영어는 한글자 : 1바이트, 한글은 2바이트
         //char 크기 : 1 byte
 
+        // 6-5 문자열 심화
+        //char c_array[7] = {'c','o','d','i','n','g','\0'};
+        // char c_array[6] = {'c','o','d','i','n','g'};
+    
+        // printf("%s\n",c_array);
+
+        char c_array[10] = {'c','o','d','i','n','g'};
+        //printf("%s\n",c_array);
+        // for(int i = 0; i < sizeof(c_array); i++)
+        // {
+        //     printf("%c\n",c_array[i]);
+        // }
+
+
+        for(int i = 0; i < sizeof(c_array); i++)
+        {
+            printf("%d\n",c_array[i]); //ASCII 코드 값 출력(NULL 문자 0으로 출력)
+        }
+
+        //문자열 입력받기 : 경찰서 조서 쓰기 예제
+        char name[256];
+	    printf("이름이 뭐에요?");
+	    scanf("%s", name, sizeof(name));
+        
+        printf("%s\n",name);
+        
         return 0;
         
 
