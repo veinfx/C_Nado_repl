@@ -7,7 +7,7 @@
     void success();
     void fail();
 
-int main(void)
+int main_faunction_2(void)
 {
     //문이 5개가 있고, 각 문마다 점점 어려운 수식 귀즈가 출제 (랜덤)
     //맞히면 통과, 틀리면 실패
